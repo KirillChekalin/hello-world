@@ -4,6 +4,6 @@ let server = new http.Server((req, res) => {
   res.end('hello world');
 });
 
-server.listen(3000, 'ec2-34-226-249-175.compute-1.amazonaws.com', () => {
-  console.log('server listen.//..');
+server.listen(3000, '127.0.0.1', () => {
+  console.log('server listen...');
 });
