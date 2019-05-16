@@ -4,4 +4,6 @@ let server = new http.Server((req, res) => {
   res.end('hello world');
 });
 
-server.listen(1337, '127.0.0.1');
+server.listen(1337, '127.0.0.1', () => {
+  console.log('server listen');
+});
